@@ -19,11 +19,11 @@ Ceci est une introduction aux frameworks frontends. Elle doit être comprise com
 
 Avec le protocole HTTP et les URL, le langage de balise HTML fait parti des 3 inventions dans le début des années 1990 qui ont permi l'essor du World Wide Web. Ce n'est pas un langage de programmation : il ne permet pas d'écrire d'algorithme ni de manipuler des données. Son seul but est d'être interprété par les navigateurs pour afficher du contenu selon les balises utilisées.
 
-![html website](../../../assets/js/nodejs/introduction-aux-frameworks-frontend/html.webp)
+![html website](./assets/html.webp)
 
 Avec l'arrivée du CSS au milieu des années 1990, on pouvait rajouter un peu de caractère et de personnalisation aux sites webs. Le CSS permettant d'influer sur les couleurs, la taille, la diposition et bien d'autre choses des éléments HTML.
 
-![css website](../../../assets/js/nodejs/introduction-aux-frameworks-frontend/css.webp)
+![css website](./assets/css.webp)
 
 ## 2. La venue du dynamisme - JavaScript
 
@@ -47,7 +47,7 @@ AngularJS est également plus modulaire que d'autres frameworks JS, puisqu'il es
 
 Enfin, AngularJS popularise le concept des SPA, pour Single Page Application. Jusqu'à présent, les sites webs étaient sous la forme de dossiers avec des fichiers HTML et stockés dans des serveurs. Une fois arrivé sur une URL, le navigateur télécharge le fichier HTML qui y correspond du serveur et l'interprète. Soit du SSR, pour Server Side Rendering. Avec un site en SPA, il n'y a plus qu'un seul fichier HTML pour l'entièreté du site stocké sur le serveur, et c'est un script JS qui a pour rôle de générer le contenu des pages et les transitions entre les URL. 
 
-![spa](../../../assets/js/nodejs/introduction-aux-frameworks-frontend/spa.webp)
+![spa](./assets/spa.webp)
 
 L'avantage est qu'on gagne en liberté de customisation : on peut mieux gérer les transitions entre les pages, voir on peut faire une application entièrement sur une page avec seulement des blocs visuels qui évoluent au fil des intéractions. On notera 2 inconvenients majeurs à cette technique. Le premier est qu'il est plus difficile de mettre en placce un SEO efficace. Comme il n'y a plus réellement de contenu HTML sur le serveur, les crawlers des navigateurs n'ont plus rien à indexer. Le second est le temps de chargement. Pour que le navigateur puisse gérer les transitions de page et les évolutions d'interface, il doit télécharger l'entièreté du site en mémoire locale, ce qui impacte lourdement les performances. Lors du premier chargement du site, la barre de chargement ne progresse pas très vite.
 
@@ -57,7 +57,7 @@ AngularJS a rapidement su s'imposer parmi les frameworks frontend et a grignoté
 
 Pendant ce temps, chez Facebook, un nouveau framework voit le jour en 2013. Il s'appelle React et promet de reprendre le concept d'Angular (MVC, SPA, fonctionnalités, performances, ...) et de l'améliorer. En termes de fonctionnalités, il met en avant le principe de composants (components en anglais). Déjà présents dans Angular, un composant est un bloc visuel d'une interface, réutilisable dans l'application et customisable. Là où un composant dans Angular est souvent un menu ou un formulaire, il peut être tout et n'importe quoi dans React. Un bouton, un paragraphe, une liste déroulante, ... En terme de performances, React opte pour un DOM virtuel. Il met en mémoire des parties de l'interface pour ne mettre à jour la page web qu'au bon moment.
 
-![virtual dom](../../../assets/js/nodejs/introduction-aux-frameworks-frontend/dom.webp)
+![virtual dom](./assets/dom.webp)
 
 Facebook met également au point un nouveau langage se basant sur JS pour son framework : JSX. On ne va plus, comme avec Angular, se retrouver avec un fichier JS pour le modèle, un fichier JS pour le controller et un fichier HTML pour la vue. Mais avec un fichier JSX avec une fonction qui va retourner le code HTML de la page. Ce qui est impossible avec du JS de base (cela pose des problèmes au niveau des mots réservés par JS, comme `class` aussi bien utilisé en HTML qu'en JS)
 
@@ -67,7 +67,7 @@ Le problème rencontré avec React et son DOM virtuel, c'est qu'on se retrouve a
 
 De nombreux développeurs se trouvent à un dilemne. Des frameworks existent pour leur faciliter leur travail, mais ils finissent par augmenter la dette technique (Angular) ou les force à adopter des paradigmes qui au final apportent des problèmes de performance. La solution est simple : créer encore plus de frameworks.
 
-![standard](../../../assets/js/nodejs/introduction-aux-frameworks-frontend/standards.webp)
+![standard](./assets/standards.webp)
 
 C'est ainsi que voit le jour en 2014 VueJS, créé par un ancien développeur d'Angular de Google. C'est un framework qui se veut être une alternative à Angular, en étant plus léger et plus libre dans l'organisation de son projet. Il reprend notamment le concept d'AngularJS d'ajouter les fonctionnalités du framework page par page. On n'est pas obligé d'écrire tout son frontend avec VueJS. Il reprend aussi le concept de composants et de DOM virtuel de React.
 
